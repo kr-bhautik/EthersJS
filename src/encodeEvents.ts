@@ -6,7 +6,7 @@ dotenv.config();
 async function test() {
     
     const provider = new ethers.JsonRpcProvider(process.env.INFURA_URL);
-    const txRcpt = await provider.getTransactionReceipt('0x5d1a1a1f76414d7dd593c70997301e5cdfbc1d120422810db46e4421499e0316');
+    const txRcpt = await provider.getTransactionReceipt('0x5d1a1a1f76414d7dd593c70997301e5cdfbc1d120422810db46e4421499e0316')  
     // console.log(txRcpt);
     // console.log(txRcpt?.logs);
 
